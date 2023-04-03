@@ -1,5 +1,16 @@
 #import "fontawesome.typ": *
 
+#let italic_fonts = ("LXGW WenKai GB Fusion")
+
+#let fonts = (
+      "SimSong",
+      "Songti SC",
+      "Avenir Next LT Pro", // original chi-cv font\
+      "Manrope", // a font available in the typst environment and looks similar to Avenir
+    )
+
+#set text(font:fonts)
+
 #let chiline() = {
   v(-3pt);
   line(length: 100%, stroke: gray);
@@ -12,6 +23,13 @@
   link(uri)[#fa[#icon] #text]
 }
 
+#let landr(
+  tl: lorem(2),
+  tr: "2333/23 - 2333/23"
+) = {
+  text(font:fonts,weight: "bold" ,tl) +  h(1fr) + tr
+}
+
 #let cventry(
   tl: lorem(2),
   tr: "2333/23 - 2333/23",
@@ -19,9 +37,15 @@
   br: "",
   content
 ) = {
+show strong: it => {
+  text(font:fonts,weight:"bold", it.body)
+}
+show emph : it => {
+  text(font:italic_fonts,weight:"regular", it.body)
+}
   block(
     inset: (left: 0pt),
-    strong(tl) + h(1fr) + tr +
+    text(font:fonts,weight: "black" ,tl) +  h(1fr) + tr +
     linebreak() +
     if bl != "" or br != "" {
       bl + h(1fr) + br + linebreak()
@@ -37,22 +61,17 @@
     level: 1
   ): set text(
     size: 22pt,
-    font: (
-      "Avenir Next LT Pro", // original chi-cv font
-      "Manrope", // a font available in the typst environment and looks similar to Avenir
-    ),
-    weight: "light",
+    font: fonts,
+    weight: "bold",
   )
 
   show heading.where(
     level: 2
   ): it => text(
     size: 12pt,
-    font: (
-      "Avenir Next LT Pro",
-      "Manrope",
-    ),
-    weight: "light",
+    font: fonts,
+    // customed for chinese heading
+    weight: "black",
     block(
       chiline() + it,
     )
