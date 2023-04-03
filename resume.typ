@@ -2,101 +2,99 @@
 
 #show: chicv
 
-= Chi Zhang
+= 范乾一
 
-#fa[#envelope] skyzh\@cmu.edu |
-#fa[#github] #link("https://github.com/skyzh")[github.com/skyzh] |
-#fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
-#fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
+#fa[#envelope] tomatofaq\@gmail.com |
+#fa[#github] #link("https://github.com/TOMATOFGY")[github.com/TOMATOFGY] |
+// #fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
+// #fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
 
-== Education
+== 教育背景
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr:  "2022/08 - 2023/12 (Expected)",
-  bl: "Master of Science in Computer Science, GPA 4.09/4.33",
-  br: "Pittsburgh, PA, USA"
-)[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023)
-]
-#cventry(
-  tl: "Shangehai Jiao Tong University",
-  tr: "2018/09 - 2022/06",
-  bl: "B. Eng in Computer Science and Technology",
-  br: "Shangehai, China"
-)[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
-]
-== Work Experience
-#cventry(
-  tl: "RisingWave Labs",
-  tr: "2021/08 - 2022/07",
-  bl: "Database System R&D Intern",
-  br: "Shanghai, China"
-)[
-  - *Top contributor of #iconlink(
-    "https://github.com/risingwavelabs/risingwave",
-    text: "RisingWave",
-    icon: github)* _as of 2023/03_. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on the development of almost all components related to stream computing and state store.
-  - *Streaming Index Joins*: Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler
-  - *Performance Improvement*: Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period
-  - *Developer Experience*. Initiated the RiseDev development tool to start a RisingWave cluster with one command, which is deeply integrated into the development workflow across unit testing, integration testing, and benchmarking. Built RisingWave Streaming Dashboard that shows cluster metrics and visualizes streaming query plans in one place
-  - *Mentoring*. Mentored database kernel interns and helped their integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
-]
+  tl: "北京大学 · 软件与微电子学院 · 在读硕士研究生 · 网络安全 (GPA 3.53/4.00, rank 4/20)",
+  tr:  "2021/09 - 2024/7 (Expected)",
+  bl: "",
+  br: ""
+)[]
 
 #cventry(
-  tl: "ByteDance, Ltd.",
-  tr: "2021/06 - 2021/08",
-  bl: "Storage System R&D Intern, TerarkDB Team",
-  br: "Beijing, China"
+  tl: "新加坡国立大学 · Computing School · 暑期实习",
+  tr:  "2019/06 - 2019/08",
+  bl: "",
+  br: ""
+)[]
+
+#cventry(
+  tl: "北京邮电大学 · 计算机学院 · 学士 · 计算机科学与技术 (GPA 91/100, rank 12/404，top 3.0% )",
+  tr:  "2017/06 - 2021/06",
+  bl: "",
+  br: ""
+)[]
+
+== 实习经历
+#cventry(
+  tl: "商汤科技 · 存储系统与技术部 · 缓存与数据加速组 · 存储系统开发实习生",
+  tr: "2022/06 - 2022/07",
 )[
-  - *Co-Optimized #iconlink(text: "TerarkDB", icon: github, "https://github.com/bytedance/terarkdb")* and *#iconlink(text: "ZenFS", icon: github, "https://github.com/westerndigitalcorporation/zenfs")*. Implemented Zone-aware Garbage Collection in TerarkDB and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and improved the p999 tail latency by 100x
-  /*
-  - Implemented *Zone-Aware Garbage Collection* in *TerrakDB* for Zoned Namespace SSDs, which reduced 3-4x of space amplification caused by interleaving write lifetime in a single ZNS zone. #iconlink("https://github.com/bytedance/terarkdb", icon: github)
-  - Added observability facilities to *ZenFS* (by Western Digital) to analyze bottlenecks and implemented a *WAL-Aware Zone Allocator*, which reduced the p999 tail latency by 100x. #iconlink("https://github.com/bzbd/zenfs", icon: github)
-  */
+- *负责一个支持多访问协议的，基于 nvme 的，键值分离的分布式键值数据库的开发。*该数据库主要功能是作为一个缓存中间件，将用户访问的热点数据缓存至固态硬盘上，加速训练平台的训练效率。
+- 为该缓存服务设计了 POSIX 接口，提高了系统易用性。用户通过 FUSE 实现的接口，以访问常见文件系统的方式访问访存中的数据，从而实现无需修改业务代码无感利用缓存。
+- 为用户态文件系统设计了系统调用劫持机制, 节省访问开销。实现了绕过 libfuse 直接访问缓存服务的功能。
+- 优化了特定使用场景下的读写效率。为 S3、Lustre 等存储服务建立了基于该缓存系统的 shadow filesystem。访问存储服务的行为将被重定向自缓存中获取数据，从而实现了读写速率上 100x 的提升。]
+
+#cventry(
+  tl: "字节跳动 · ByteHouse · C++ 研发实习生",
+  tr: "2023/03 - 至今",
+  bl: "",
+  br: ""
+)[
+  - 负责字节旗下 OLAP 数据库 ByteHouse 存储层的优化。
 ]
 
 #cventry(
-  tl: "PingCAP, Inc.",
+  tl: "微软亚洲研究院 · 创新工程组 (IEG) · 软件开发实习生",
   tr: "2020/08 - 2021/01",
-  bl: "Storage System R&D Intern",
-  br: "Shanghai, China"
 )[
-  - Built LSM-based storage engine *#iconlink("https://github.com/tikv/agatedb", icon: github, text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large vallues from LSM tree into value log, so as to reduce write amplification.
+  - 负责一个用戶量为十万级的应用的后端与 iOS 端的开发。
+  - 深度参与项目重构的设计与实现。提高了产品迭代效率，解决了技术遗留问题 20+。
 ]
 
-== Open-Source Contributions
+== 获奖情况
 
 #cventry(
-  tl: "cmu-db/busttub" + " " + iconlink("https://github.com/cmu-db/bustub", icon: github),
-  tr: "2022/08 - Now"
+  tl: "2022 OceanBase 数据库大赛" + "   " + iconlink("https://github.com/cmu-db/bustub"),
+  tr: "2022/10 - 2023/01"
 )[
-  - Lead the development of the BusTub database system. Added SQL support/query processing layer to the system.
-  - Redesigned course projects to help students better understand the concepts and apply them to real-world scenarios. Developed leaderboard tests to challenge advanced students and enable further study.
-
+初赛内容为拓展 miniob 的功能。复赛内容为在给定计算资源限制下，为 OceanBase 优化旁路导入功能。
+- 为 miniob  拓展功能，使其成为功能齐备的数据库。负责数据库页缓冲区、索引等功能的开发。
+- 为 OceanBase 优化了旁路导入功能，性能相较于原 batch insert 方案实现了 10x 的提升。
+- 负责旁路导入中文件解析、压缩算法、归并排序算法、csv2sstable 算法等模块的设计与实现。充分使用调优技术捕获大小优化点加以改进；充分使用对象池、线程池等池化思想在架构上做改进以优化效率。 #iconlink("https://github.com/cmu-db/bustub")
 ]
 
-#cventry(
-  tl: "RisingLight Community" + " " + iconlink("https://github.com/risinglightdb", icon: github),
-  tr: "2022/01 - Now",
-)[
-  - Lead the development of *RisingLight*, an OLAP database system for educational purpose.
-]
+
+== 项目经历
 
 #cventry(
-  tl: "TiKV Community" + " " + iconlink("https://github.com/tikv", icon: github),
-  tr: "2020/05 - Now"
+  tl: "Sourcetrail Golang Indexer   " + iconlink("https://github.com/cmu-db/bustub"),
+  tr: "2021.01 - 2021.06"
 )[
-  - Maintains *TiKV Coprocessor*, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
+- 为源码阅读软件 Sourcetrail 提供了对 Golang 语言的支持。
+- 利用程序静态分析技术，分析并生成 Golang 项目的函数间调用图、函数内控制流图、类继承关系及模块间
+依赖关系，并将上述数据绑定到 Sourcetrail 中，使用户能以可视化的形式与调用图等数据结构进行交互。
 ]
 
 #cventry(
-  tl: "Personal Projects",
-  tr: "5.3k followers " + iconlink(text: "skyzh", icon: github, "https://github.com/skyzh")
+  tl: "Sourcetrail Golang Indexer   ",
+  tr: "2021.01 - 2021.06"
 )[
-  - *#iconlink(icon: github, text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#iconlink(icon: github, text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Learn Rust generics by implementing a vectorized expression evaluation framework
+- 负责实现一个拥有中断机制、进程调度、文件系统等常见功能的小型内核。考察了常见的开源操作系统，uCore\@thu, rCore\@thu, xv6\@MIT, BlogOS\@Phil-opp。
+- 负责特权级转换功能的实现；负责中断机制的实现。包含中断屏蔽、二级中页断等基本功能；负责内核内存管理功能的实现。包括 sv39 页表机制的实现、基于 BuddySystem 的内存管理；负责文件系统的实现。仿照 Linux 的虚拟文件系统架构，基于 Ext2 实现了一个简易的文件系统。
 ]
 
-#align(right, text(fill: gray)[Last Updated on Mar 30, 2023])
+== 技能
+
+- 语言：C/C++, Rust, Golang, Shell, HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
+- 工具：Linux; Git; GDB, Perf, Flamegraph; Fuse; Docker; Django; MySQL, Redis, Memcached, LevelDB, RocksDB
+- 外语：TOEFL : 102 ; CET-6 : 559
+
+
+#align(right, text(fill: gray)[Last Updated on April 3, 2023])

@@ -6,6 +6,7 @@
   v(-10pt)
 }
 
+
 #let iconlink(
   uri, text: "", icon: link-icon) = {
   link(uri)[#fa[#icon] #text]
