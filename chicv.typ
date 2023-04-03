@@ -1,15 +1,13 @@
 #import "fontawesome.typ": *
 
-#let italic_fonts = ("LXGW WenKai GB Fusion")
+#let italic_fonts = ("Source Han Serif SC VF")
 
 #let fonts = (
-      "SimSong",
+      // "Source Han Serif SC VF",
       "Songti SC",
       "Avenir Next LT Pro", // original chi-cv font\
       "Manrope", // a font available in the typst environment and looks similar to Avenir
     )
-
-#set text(font:fonts)
 
 #let chiline() = {
   v(-3pt);
@@ -25,7 +23,7 @@
 
 #let landr(
   tl: lorem(2),
-  tr: "2333/23 - 2333/23"
+  tr: "YYYY/MM - YYYY/MM"
 ) = {
   text(font:fonts,weight: "bold" ,tl) +  h(1fr) + tr
 }
