@@ -1,6 +1,6 @@
 # Chi CV template, but in Typst and Chinese
 
-Rip-off of [rip-off of skyzh's CV, but Typst](https://github.com/matchy233/typst-chi-cv-template) and [rip-off of skyzh's CV](https://github.com/matchy233/chi-cv-template), using [Typst](https://typst.app/).
+Rip-off of [rip-off of skyzh's CV, but Typst](https://github.com/matchy233/typst-chi-cv-template) and [rip-off of skyzh's CV in Latex](https://github.com/matchy233/chi-cv-template), adapted for use with Typst and added support for Chinese. 
 
 ## Usage
 
@@ -30,4 +30,4 @@ You cannot simply compile files by copying them to the web application because T
 
 ![Sample output of Chi-CV template in Chinese](./img/my-cv-preview.jpg)
 
-最后,祝大家都成功地令人发指😭.
+最后,祝大家都成功得令人发指😭.
