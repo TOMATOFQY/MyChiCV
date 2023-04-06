@@ -1,11 +1,8 @@
 #import "fontawesome.typ": *
 
-#let italic_fonts = ("Source Han Serif SC VF")
 
 #let fonts = (
-      // "Source Han Serif SC VF",
-      "Songti SC",
-      "Avenir Next LT Pro", // original chi-cv font\
+      // "Avenir Next LT Pro", // original chi-cv font\
       "Manrope", // a font available in the typst environment and looks similar to Avenir
     )
 
@@ -39,7 +36,7 @@ show strong: it => {
   text(font:fonts,weight:"bold", it.body)
 }
 show emph : it => {
-  text(font:italic_fonts,weight:"regular", it.body)
+  text(font:fonts,weight:"regular", it.body)
 }
   block(
     inset: (left: 0pt),
