@@ -45,7 +45,7 @@ _负责字节旗下 OLAP 数据库 ByConity 存储层的优化。_
 
 
 #cventry(
-  tl: "微软亚洲研究院 · 创新工程组 (IEG) · 软件开发实习生",
+  tl: "微软亚洲研究院 · 创新工程组 (IEG) · 软件开发实习生 " +  iconlink("https://apps.apple.com/cn/app/%E7%89%9B%E5%8A%B2%E5%B0%8F%E8%8B%B1/id1509670731",icon:app-store),
   tr: "2021/08 - 2022/06",
 )[
 _负责一个用戶量为十万级的应用的后端与 iOS 端的开发。_
@@ -55,7 +55,7 @@ _负责一个用戶量为十万级的应用的后端与 iOS 端的开发。_
 == 获奖情况
 
 #cventry(
-  tl: "2022 OceanBase 数据库大赛" + "   " + iconlink("https://open.oceanbase.com/competition/index#info") +  "   " + "季军 (决赛 rank 4/50,初赛 rank 11/1180)" ,
+  tl: "蚂蚁集团 · 2022 OceanBase 数据库大赛" + "   " + iconlink("https://open.oceanbase.com/competition/index#info") +  "   " + "季军 (决赛 rank 4/50,初赛 rank 11/1180)" ,
   tr: "2022/10 - 2023/01"
 )[
 初赛内容为拓展 miniob 的功能,使其成为功能齐备的数据库。
@@ -95,4 +95,4 @@ _考察了uCore\@thu, rCore\@thu, xv6\@MIT, BlogOS\@Phil-opp等常见的开源�
 - 外语：TOEFL : 102 ; CET-6 : 559
 
 
-#align(right, text(fill: gray)[Last Updated on April 3, 2023])
+#align(right, text(fill: gray)[Last Updated on June 1, 2023])
