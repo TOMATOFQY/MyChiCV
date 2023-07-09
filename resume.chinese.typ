@@ -26,19 +26,29 @@
 
 == 实习经历
 #cventry(
-  tl: "字节跳动 · Data · 数据平台 · 分析型数据库 · C++ 研发实习生",
-  tr: "2023/03 - 至今",
+  tl: "易方达 · 中后台条线 · DBA",
+  tr: "2023/07 - 至今",
   bl: "",
   br: ""
 )[
-_负责字节旗下 OLAP 数据库 ByConity 存储层的优化。_
+_管理业务所涉及的各类数据库、优化数据库管理系统性能、保证系统高可用。_
+]
+
+#cventry(
+  tl: "字节跳动 · Data · 数据平台 · 分析型数据库 · C++ 研发实习生",
+  tr: "2023/03 - 2023/07",
+  bl: "",
+  br: ""
+)[
+参与字节旗下分析型数据库 ByConity 存储层的优化工作。
+- 参与 ByConity 冷存温存、监控链路功能的设计与实现。
 ]
 
 #cventry(
   tl: "商汤科技 · 存储系统与技术部 · 缓存与数据加速组 · 存储系统开发实习生",
   tr: "2022/06 - 2022/11",
 )[
-*负责一个支持多访问协议的，基于 nvme 的，键值分离的分布式键值数据库的开发。* _其作为商汤内部训练平台的缓存中间件，将用户访问的热点数据缓存至固态硬盘上，以加速训练效率。_
+*负责一个支持多访问协议的，基于 nvme 的，键值分离的分布式键值数据库缓存服务的开发。*
 - *为该缓存服务设计了 POSIX 接口，提高了系统易用性。*用户通过 FUSE 实现的接口，以访问常见文件系统的方式访问访存中的数据，从而实现无需修改业务代码无感利用缓存。
 - *为用户态文件系统设计了系统调用劫持机制, 节省访问开销。*实现了绕过 libfuse 直接访问缓存服务的功能。
 - *优化了特定使用场景下的读写效率。*为 S3、Lustre 等存储服务建立了基于该缓存系统的 shadow filesystem。访问存储服务的行为将被重定向自缓存中获取数据，*从而实现了读写速率上 100x 的提升。*]
@@ -90,9 +100,8 @@ _考察了uCore\@thu, rCore\@thu, xv6\@MIT, BlogOS\@Phil-opp等常见的开源�
 
 == 技能
 
-- 语言：C/C++, Rust, Golang, Shell, HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
-- 工具：Git; GDB, Perf, Flamegraph; Fuse; Docker; Django; MySQL, Clickhouse, Redis, Memcached, LevelDB, RocksDB
+- 语言：C/C++, Shell, Rust, Golang,  HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
+- 工具&框架&产品：CMake; Git; GDB, Perf, Flamegraph; Fuse; Docker; MySQL, Clickhouse, Redis, Memcached, LevelDB
 - 外语：TOEFL : 102 ; CET-6 : 559
 
-
-#align(right, text(fill: gray)[Last Updated on June 1, 2023])
+// #align(right, text(fill: gray)[Last Updated on July 8, 2023])
