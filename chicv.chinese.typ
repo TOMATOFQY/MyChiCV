@@ -78,7 +78,7 @@ show emph : it => {
 
   show link: it => underline(offset: 2pt, it)
   set page(
-   margin: (x: 0.9cm, y: 1.3cm),
+   margin: (x: 0.9cm, y: 1.1cm),
   )
   set par(justify: true)
 
