@@ -660,10 +660,10 @@
   ("card-alt", "\u{f47f}"),
 )
 #let igloo = symbol("\u{f7ae}")
-#let image = symbol(
-  "\u{f03e}",
-  ("plural", "\u{f302}"),
-)
+// #let image = symbol(
+//   "\u{f03e}",
+//   ("plural", "\u{f302}"),
+// )
 #let inbox = symbol("\u{f01c}")
 #let indent = symbol("\u{f03c}")
 #let industry = symbol("\u{f275}")
