@@ -76,7 +76,7 @@ show emph : it => {
   )
   set list(indent: 0pt)
 
-  show link: it => underline(offset: 2pt, it)
+  show link: it => underline(stroke:1pt,evade: true,offset: 2pt,extent:0pt, it)
   set page(
    margin: (x: 0.9cm, y: 1.1cm),
   )
