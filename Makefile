@@ -1,4 +1,2 @@
 c:
-	./local/typst --font-path ./fonts resume.chinese.typ resume.chinese.pdf
-e:
-	./local/typst --font-path ./fonts resume.english.typ resume.english.pdf
+	typst compile --font-path ./fonts resume.chinese.typ
