@@ -304,7 +304,7 @@
   ("plural", "\u{f085}"),
 )
 #let coins = symbol("\u{f51e}")
-#let columns = symbol("\u{f0db}")
+// #let columns = symbol("\u{f0db}")
 #let comment = symbol(
   "\u{f075}",
   ("alt", "\u{f27a}"),

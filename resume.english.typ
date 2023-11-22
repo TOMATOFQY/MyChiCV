@@ -1,100 +1,108 @@
-#import "chicv.typ": *
+#import "chicv.chinese.typ": *
 
 #show: chicv
 
-= Chi Zhang
-#fa[#envelope] skyzh\@cmu.edu |
-#fa[#github] #link("https://github.com/skyzh")[github.com/skyzh] |
-#fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
-#fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
+// 设置行距
+
+#box([
+= Qianyi Fan
+#fa[#phone] #fa[#weixin] (+86)132-8866-2339 |
+#fa[#envelope]  tomatofqy\@foxmail.com |
+#fa[#github] #link("https://github.com/TOMATOFGY")[github.com/TOMATOFGY]
+// #fa[#home] #link("https://www.notion.so/tomatofgy/TOMATOFGY-s-Blog-c83179a1988543678b177bbb4fa957e1")[TOMATOFGY's Blog]
+])
+#h(1fr)
+#box(baseline:3% ,radius: 5pt,[
+  #image("img/一寸像.png",width:8%)
+  // #emoji.tomato
+]
+)
+
+
+
 == Education
+#landr(
+  tl: "1. Peking University · School of Software and Microelectronics\nNetwork Security 丨 Master's Degree Candidate 丨 GPA 3.53/4.00, rank 4/20",
+  tr:  "2021/09 - 2024/07",
+)
+#linebreak()
+#landr(
+  tl: "2. National University of Singapore · School of Computing · Summer Internship",
+  tr:  "2019/06 - 2019/08",
+)
+#linebreak()
+#landr(
+  tl: "3. Beijing University of Posts and Telecommunications · School of Computer Science\nComputer Science and Technology 丨 Bachelor's Degree 丨 (GPA 91/100, rank 12/404, top 3.0%)",
+  tr:  "2017/06 - 2021/06",
+)
+
+== Internship Experience
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr:  "2022/08 - 2023/12 (Expected)",
-  bl: "Master of Science in Computer Science, GPA 4.09/4.33",
-  br: "Pittsburgh, PA, USA"
+  tl: "1. E Fund Management · FinTech · Data Development Engineer",
+  tr: "2023/07 - 2023/10",
+  bl: "",
+  br: ""
 )[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023)
+ - *Optimized the performance of the internal MongoDB cluster, achieving the same service level as traditional cloud service providers at 50% of the cost.* #link("https://github.com/TOMATOFGY/TOMATOFGY/blob/ba38d0515734633b137765a03b3d2734a0794c86/doc/%E8%8C%83%E4%B9%BE%E4%B8%80%E7%AD%94%E8%BE%A9_%E5%85%AC%E5%BC%80.pdf")[#fa[#github] ]
+- Participated in the technology selection for the data platform and conducted performance analysis of Vertica and Doris to guide the selection process.
 ]
 #cventry(
-  tl: "Shangehai Jiao Tong University",
-  tr: "2018/09 - 2022/06",
-  bl: "B. Eng in Computer Science and Technology",
-  br: "Shangehai, China"
+  tl: "2. ByteDance · Data · Data Platform · Analytical Database · C++ R&D Intern",
+  tr: "2023/03 - 2023/07",
+  bl: "",
+  br: ""
 )[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
+Participated in the optimization work of the storage layer of ByConity, an analytical database owned by ByteDance.
+- Participated in the design and implementation of storage and computation separation, distributed caching, and monitoring link functions.
+- Participated in the implementation of data cold-hot separation, achieving cost reduction and performance improvement.
 ]
-== Work Experience
-#cventry(
-  tl: "RisingWave Labs",
-  tr: "2021/08 - 2022/07",
-  bl: "Database System R&D Intern",
-  br: "Shanghai, China"
-)[
-  - *Top contributor of #iconlink(
-    "https://github.com/risingwavelabs/risingwave",
-    text: "RisingWave",
-    icon: github)* _as of 2023/03_. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on the development of almost all components related to stream computing and state store.
-  - *Streaming Index Joins*: Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler
-  - *Performance Improvement*: Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period
-  - *Developer Experience*. Initiated the RiseDev development tool to start a RisingWave cluster with one command, which is deeply integrated into the development workflow across unit testing, integration testing, and benchmarking. Built RisingWave Streaming Dashboard that shows cluster metrics and visualizes streaming query plans in one place
-  - *Mentoring*. Mentored database kernel interns and helped their integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
-]
+
 
 #cventry(
-  tl: "ByteDance, Ltd.",
-  tr: "2021/06 - 2021/08",
-  bl: "Storage System R&D Intern, TerarkDB Team",
-  br: "Beijing, China"
+  tl: "3. SenseTime · Storage Systems Department · Acceleration Group · C++ R&D Intern",
+  tr: "2022/06 - 2022/11",
 )[
-  - *Co-Optimized #iconlink(text: "TerarkDB", icon: github, "https://github.com/bytedance/terarkdb")* and *#iconlink(text: "ZenFS", icon: github, "https://github.com/westerndigitalcorporation/zenfs")*. Implemented Zone-aware Garbage Collection in TerarkDB and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and improved the p999 tail latency by 100x
-  /*
-  - Implemented *Zone-Aware Garbage Collection* in *TerrakDB* for Zoned Namespace SSDs, which reduced 3-4x of space amplification caused by interleaving write lifetime in a single ZNS zone. #iconlink("https://github.com/bytedance/terarkdb", icon: github)
-  - Added observability facilities to *ZenFS* (by Western Digital) to analyze bottlenecks and implemented a *WAL-Aware Zone Allocator*, which reduced the p999 tail latency by 100x. #iconlink("https://github.com/bzbd/zenfs", icon: github)
-  */
+*Participated in the development of an cache service at SenseTime (a distributed key-value database based on NVMe).*
+- *Designed POSIX interface*. By using Linux FUSE, users can access the cache without modifying the code that accesses the file system, improving service usability.
+- *Designed system call hijacking mechanism*. Implemented bypassing libfuse to improving access efficiency.
+- *Optimized read and write efficiency for cloud scenarios*. Established reverse proxies for services such as S3, achieving a 100x increase in read and write speed and a 3% increase in model training speed.
 ]
+
 
 #cventry(
-  tl: "PingCAP, Inc.",
-  tr: "2020/08 - 2021/01",
-  bl: "Storage System R&D Intern",
-  br: "Shanghai, China"
+  tl: "4. Microsoft Research Asia · Innovation Engineering Group (IEG) · Software Development Intern " +  iconlink("https://apps.apple.com/cn/app/%E7%89%9B%E5%8A%B2%E5%B0%8F%E8%8B%B1/id1509670731",icon:app-store),
+  tr: "2021/08 - 2022/06",
 )[
-  - Built LSM-based storage engine *#iconlink("https://github.com/tikv/agatedb", icon: github, text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large vallues from LSM tree into value log, so as to reduce write amplification.
+*Responsible for the backend and iOS development of an application with over 100,000 monthly active users*.
+- Deeply involved in the design and implementation of project refactoring. Used SwiftUI to replace the UIKit framework.
 ]
 
-== Open-Source Contributions
+== Awards
 
 #cventry(
-  tl: "cmu-db/busttub" + " " + iconlink("https://github.com/cmu-db/bustub", icon: github),
-  tr: "2022/08 - Now"
+  tl: "1. Ant Group · 2022 OceanBase Database Competition" + "   " + iconlink("https://open.oceanbase.com/competition/index#info") +  "   " + "Third Place (Rank 4/1180)" ,
+  tr: "2022/10 - 2023/01"
 )[
-  - Lead the development of the BusTub database system. Added SQL support/query processing layer to the system.
-  - Redesigned course projects to help students better understand the concepts and apply them to real-world scenarios. Developed leaderboard tests to challenge advanced students and enable further study.
+*Designed and optimized the high-performance bypass import feature for OceanBase*
+- Designed and implemented the bypass import module, including CSV file parsing, compression algorithms, merge sort algorithms, and CSV2SSTable algorithms.
+- Applied tuning techniques such as perf to capture and optimize various optimization points.
+- *Significantly improved performance*, achieving a 10x performance improvement compared to OceanBase's original batch insert solution. #iconlink("https://zhuanlan.zhihu.com/p/605181163",icon:zhihu) #iconlink("https://zhuanlan.zhihu.com/p/617520132",icon:zhihu)
 
 ]
+
+
+== Project Experience
 
 #cventry(
-  tl: "RisingLight Community" + " " + iconlink("https://github.com/risinglightdb", icon: github),
-  tr: "2022/01 - Now",
+  tl: "1. Sourcetrail Golang Indexer  " + emph("Open Source Contribution   ") + iconlink("https://github.com/TOMATOFGY/SourcetrailGolangIndexer", icon:github),
+  tr:  "2021/01 - 2021/06"
 )[
-  - Lead the development of *RisingLight*, an OLAP database system for educational purpose.
+- Provided support for the Golang language in the source code reading software Sourcetrail. Utilized program static analysis techniques to analyze and generate function call graphs, control flow graphs, and more for Golang projects, and provided an interactive graphical interface.
 ]
 
-#cventry(
-  tl: "TiKV Community" + " " + iconlink("https://github.com/tikv", icon: github),
-  tr: "2020/05 - Now"
-)[
-  - Maintains *TiKV Coprocessor*, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
-]
 
-#cventry(
-  tl: "Personal Projects",
-  tr: "5.3k followers " + iconlink(text: "skyzh", icon: github, "https://github.com/skyzh")
-)[
-  - *#iconlink(icon: github, text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#iconlink(icon: github, text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Learn Rust generics by implementing a vectorized expression evaluation framework
-]
-
-#align(right, text(fill: gray)[Last Updated on Mar 30, 2023])
+== Others
+- Honors: Received multiple first-class scholarships and the title of Excellent Student at the university.
+- Languages: C/C++, Shell, Rust, Golang, HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
+- Tools & Products: CMake; Git; GDB, Perf, Flamegraph; Docker; MySQL, Clickhouse, Redis, Memcached, LevelDB
+- #box([Languages: TOEFL: 102; CET-6: 559]) #h(1fr) #box([  #text(fill: gray)[Last Updated on Sep 20, 2023]])

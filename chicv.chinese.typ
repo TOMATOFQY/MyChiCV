@@ -2,8 +2,11 @@
 
 #let italic_fonts = ("Source Han Serif SC VF")
 
+#let title_fonts = ("FZJinLS-B-GB")
+
 #let fonts = (
       // "Source Han Serif SC VF",
+      // "FZJinLS-B-GB",
       "Songti SC",
       "Avenir Next LT Pro", // original chi-cv font\
       "Manrope", // a font available in the typst environment and looks similar to Avenir
@@ -38,6 +41,7 @@
 show strong: it => {
   text(font:fonts,weight:"bold", it.body)
 }
+
 show emph : it => {
   text(font:italic_fonts,weight:"regular", it.body)
 }
@@ -60,7 +64,7 @@ show emph : it => {
   ): set text(
     size: 22pt,
     font: fonts,
-    weight: "bold",
+    weight: "black",
   )
 
   show heading.where(
@@ -74,6 +78,7 @@ show emph : it => {
       chiline() + it,
     )
   )
+
   set list(indent: 0pt)
 
   show link: it => underline(stroke:1pt,evade: true,offset: 2pt,extent:0pt, it)
