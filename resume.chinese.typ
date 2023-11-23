@@ -11,7 +11,7 @@
 ])
 #h(1fr)
 #box(baseline:3% ,radius: 5pt,[
-  #image("img/一寸像.png",width:8%)
+  #image("img/tomato.png",width:8%)
   // #emoji.tomato
 ]
 )
@@ -72,7 +72,7 @@
   tr: "2021/08 - 2022/06",
 )[
 *负责开发月活跃用户达十万级的应用的后端及 iOS 端*。
-- 深度参与项目重构的设计与实现。使用 SwiftUI 替代了 UIKit 框架，**提升产品迭代效率**。
+- 深度参与项目重构的设计与实现。使用 SwiftUI 替代了 UIKit 框架，提升产品迭代效率。
 ]
 
 == 获奖情况
@@ -106,7 +106,6 @@
 - _考察了uCore\@thu, rCore\@thu, xv6\@MIT, BlogOS\@Phil-opp等常见的开源操作系统._ 负责特权级转换功能的实现；负责中断机制的实现。包含中断屏蔽、二级中页断等基本功能；负责内核内存管理功能的实现。包括 sv39 页表机制的实现、基于 BuddySystem 的内存管理；负责文件系统的实现。仿照 Linux 的虚拟文件系统架构，基于 Ext2 实现了一个简易的文件系统。
 ]
 == 其他
-- 荣誉：在校曾获多次一等奖学金, 校级三好学生等荣誉称号.
 - 语言：C/C++, Shell, Rust, Golang,  HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
 - 工具&框架&产品：CMake; Git; GDB, Perf, Flamegraph; Docker; MySQL, Clickhouse, Redis, Memcached, LevelDB
 - #box([外语：TOEFL : 102 ; CET-6 : 559]) #h(1fr) #box([  #text(fill: gray)[Last Updated on Sep 20, 2023]])

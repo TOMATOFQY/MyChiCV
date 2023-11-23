@@ -2,7 +2,7 @@
 
 #show: chicv
 
-// 设置行距
+#text(font:("Apple Color Emoji UI"))[🍅❓:]
 
 #box([
 = Qianyi Fan
@@ -13,7 +13,7 @@
 ])
 #h(1fr)
 #box(baseline:3% ,radius: 5pt,[
-  #image("img/一寸像.png",width:8%)
+  #image("img/tomato.png",width:6%)
   // #emoji.tomato
 ]
 )
@@ -102,7 +102,6 @@ Participated in the optimization work of the storage layer of ByConity, an analy
 
 
 == Others
-- Honors: Received multiple first-class scholarships and the title of Excellent Student at the university.
 - Languages: C/C++, Shell, Rust, Golang, HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
 - Tools & Products: CMake; Git; GDB, Perf, Flamegraph; Docker; MySQL, Clickhouse, Redis, Memcached, LevelDB
-- #box([Languages: TOEFL: 102; CET-6: 559]) #h(1fr) #box([  #text(fill: gray)[Last Updated on Sep 20, 2023]])
+- #box([Languages: TOEFL: 102; CET-6: 559]) #h(1fr) #box([  #text(fill: gray)[Last Updated on Nov 22, 2023]])

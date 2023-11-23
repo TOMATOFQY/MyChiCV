@@ -10,6 +10,7 @@
       "Songti SC",
       "Avenir Next LT Pro", // original chi-cv font\
       "Manrope", // a font available in the typst environment and looks similar to Avenir
+      "Apple Color Emoji",
     )
 
 #let chiline() = {
