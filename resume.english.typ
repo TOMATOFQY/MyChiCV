@@ -2,8 +2,6 @@
 
 #show: chicv
 
-#text(font:("Apple Color Emoji UI"))[🍅❓:]
-
 #box([
 = Qianyi Fan
 #fa[#phone] #fa[#weixin] (+86)132-8866-2339 |
