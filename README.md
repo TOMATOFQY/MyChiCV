@@ -12,6 +12,6 @@ CV in English is the original version from Chi Ce, and CV in Chinese is the vers
 
 ![Sample output of Chi-CV template](./img/eng.png)
 
-![Sample output of Chi-CV template in Chinese](./img/zh.jpg)
+![Sample output of Chi-CV template in Chinese](./img/zh.png)
 
 Life is hard. Good luck. Play good game.
