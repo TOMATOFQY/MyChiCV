@@ -5,14 +5,9 @@
 #let title_fonts = ("FZJinLS-B-GB")
 
 #let fonts = (
-      // "Source Han Serif SC VF",
-      // "FZJinLS-B-GB",
-      "Songti SC",
       "Avenir Next LT Pro", // original chi-cv font\
       "Manrope", // a font available in the typst environment and looks similar to Avenir
       "Apple Color Emoji",
-      "SF Pro",
-      "Font Awesome 6 Free Solid"
     )
 
 #let chiline() = {
@@ -23,10 +18,8 @@
 
 
 #let iconlink(
-  uri, word: "", icon: link-icon) = {
-  link(uri)[
-    #fa[#icon] #word
-    ]
+  uri, text: "", icon: link-icon) = {
+  link(uri)[#fa[#icon] #text]
 }
 
 #let landr(
@@ -43,11 +36,6 @@
   br: "",
   content
 ) = {
-
-show text:it => {
-  text(font:fonts, it)
-}
-
 show strong: it => {
   text(font:fonts,weight:"bold", it.body)
 }

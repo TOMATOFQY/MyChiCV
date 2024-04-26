@@ -10,9 +10,8 @@ You cannot simply compile files by copying them to the web application because T
 
 CV in English is the original version from Chi Ce, and CV in Chinese is the version I modified.
 
-![Sample output of Chi-CV template](./img/chi-cv-preview.png)
+![Sample output of Chi-CV template](./img/eng.png)
 
+![Sample output of Chi-CV template in Chinese](./img/zh.jpg)
 
-![Sample output of Chi-CV template in Chinese](./img/my-cv-preview.jpg)
-
-最后,祝大家都成功得令人发指😭.
+Life is hard. Good luck. Play good game.

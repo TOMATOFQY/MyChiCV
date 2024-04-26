@@ -12,15 +12,12 @@
 #h(1fr)
 #box(baseline:3% ,radius: 5pt,[
   #image("img/tomato.png",width:8%)
-  // #emoji.tomato
-]
+  ]
 )
-
-
 
 == 教育背景
 #landr(
-  tl: "北京大学·软件与微电子学院·网络安全·在读硕士研究生·(GPA 3.53/4.00, rank 4/20)",
+  tl: "北京大学·软件与微电子学院·网络安全·在读硕士研究生·(GPA 3.60/4.00, rank 4/20)",
   tr:  "2021/09 - 2024/07",
 )
 #linebreak()
@@ -30,22 +27,26 @@
 )
 #linebreak()
 #landr(
-  tl: "北京邮电大学·计算机学院·计算机科学与技术·学士·(GPA 91/100, rank 12/404，top 3.0% )",
+  tl: "北京邮电大学·计算机学院·计算机科学与技术·学士·(GPA 91/100, rank 12/404)",
   tr:  "2017/06 - 2021/06",
 )
 
-== 实习经历
+== 工作经历
+
 #cventry(
-  tl: "1. 易方达 · 中后台条线 · 数据研发工程师",
-  tr: "2023/07 - 2023/10",
+  tl: "1. 字节跳动 · AML · engine · Parameter Server Group · 研发",
+  tr: "2023/12 - 2024/05",
   bl: "",
   br: ""
 )[
-- *针对公司内部 MongoDB 集群进行性能优化，成功以传统云服务提供商 50% 的成本达到了其服务水平。* #link("https://github.com/TOMATOFGY/TOMATOFGY/blob/ba38d0515734633b137765a03b3d2734a0794c86/doc/%E8%8C%83%E4%B9%BE%E4%B8%80%E7%AD%94%E8%BE%A9_%E5%85%AC%E5%BC%80.pdf")[#fa[#github] ]
-- 参与数据平台技术选型，进行 Vertica 与 Doris 的性能分析以指导选择过程。
+参与字节机器学习平台中参数服务器组件的研发.参与推荐系统模中型的训练与推理服务.
+- 参与 PS 组件在不同运行环境下的优化. 以体系结构角度优化服务性能.
+- 参与同步链路的优化. 平均减少服务所需带宽 20%.
 ]
+
+
 #cventry(
-  tl: "2. 字节跳动 · Data · 数据平台 · 分析型数据库 · C++ 研发实习生",
+  tl: "2. 字节跳动 · Data · 数据平台 · 分析型数据库 · 研发实习生",
   tr: "2023/03 - 2023/07",
   bl: "",
   br: ""
@@ -57,7 +58,7 @@
 
 
 #cventry(
-  tl: "3. 商汤科技 · 存储系统与技术部 · 缓存与数据加速组 · 存储系统开发实习生",
+  tl: "3. 商汤科技 · 存储系统与技术部 · 缓存与数据加速组 · 研发实习生",
   tr: "2022/06 - 2022/11",
 )[
 *参与商汤内部缓存服务开发（基于 NVMe 的分布式键值数据库）。*
@@ -108,4 +109,4 @@
 == 其他
 - 语言：C/C++, Shell, Rust, Golang,  HTML/CSS/JavaScript, Python, SQL, Swift, Obj-C, VHDL
 - 工具&框架&产品：CMake; Git; GDB, Perf, Flamegraph; Docker; MySQL, Clickhouse, Redis, Memcached, LevelDB
-- #box([外语：TOEFL : 102 ; CET-6 : 559]) #h(1fr) #box([  #text(fill: gray)[Last Updated on Sep 20, 2023]])
+- #box([外语：TOEFL : 102 ; CET-6 : 559]) #h(1fr) #box([  #text(fill: gray)[Last Updated on Apr 26, 2024]])
